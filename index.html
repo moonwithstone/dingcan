@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业智慧食堂管理系统 | 双钱包管理 | 人脸核销 | 降本增效解决方案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#3B82F6',
+                            DEFAULT: '#1E40AF', // 科技蓝
+                            dark: '#1E3A8A',
+                        },
+                        action: {
+                            DEFAULT: '#F97316', // 活力橙
+                            hover: '#EA580C',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 针对百度推广的优化：手机端底部悬浮 */
+        .mobile-bottom-bar {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        scroll-behavior: smooth;
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50">
+
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-brand rounded flex items-center justify-center text-white font-bold text-xl">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-800">智慧食堂系统</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="hover:text-brand font-medium">核心功能</a>
+                <a href="#hardware" class="hover:text-brand font-medium">智能硬件</a>
+                <a href="#data" class="hover:text-brand font-medium">数据报表</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:block text-right">
+                    <p class="text-xs text-gray-500">24小时咨询热线</p>
+                    <p class="text-lg font-bold text-brand">400-XXX-XXXX</p>
+                </div>
+                <a href="#contact" class="bg-action hover:bg-action-hover text-white px-6 py-2 rounded-full font-bold transition">
+                    免费获取方案
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-brand-dark to-brand-light text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 z-10">
+                <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4 border border-white/30">
+                    已服务 500+ 政企单位食堂
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    企业级智慧食堂管理系统<br>
+                    <span class="text-action text-yellow-300">降本增效</span> 从每一餐开始
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-lg">
+                    独家支持<b>“现金+补贴”双钱包</b>管理，手机在线报餐，人脸极速核销。告别财务糊涂账，杜绝食材大浪费。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-action hover:bg-action-hover text-white text-center px-8 py-3 rounded-lg font-bold text-lg shadow-lg transform hover:-translate-y-1 transition">
+                        立即预约演示
+                    </a>
+                    <a href="#features" class="bg-transparent border-2 border-white hover:bg-white/10 text-white text-center px-8 py-3 rounded-lg font-bold text-lg transition">
+                        了解核心功能
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-blue-200 flex items-center">
+                    <i class="fas fa-check-circle mr-2"></i> 支持本地部署
+                    <span class="mx-3">|</span>
+                    <i class="fas fa-check-circle mr-2"></i> 7x24小时售后
+                </p>
+            </div>
+            
+            <div class="w-full md:w-1/2 relative z-10 text-center mt-12 md:mt-0">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="智慧食堂数据大屏展示" class="rounded-xl shadow-2xl border-4 border-white/20 mx-auto relative z-10">
+                
+                <div class="absolute -bottom-6 -left-4 md:-left-8 bg-white text-gray-800 p-4 rounded-xl shadow-xl z-20 animate-bounce" style="animation-duration: 3s;">
+                    <div class="flex items-center">
+                        <div class="bg-green-100 p-3 rounded-full mr-3 text-green-600">
+                            <i class="fas fa-coins text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-gray-500">预估节省食材</p>
+                            <p class="font-bold text-lg text-gray-900">¥ 12,450</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute -top-6 -right-4 md:-right-8 bg-white text-gray-800 p-3 rounded-xl shadow-xl z-20 animate-bounce" style="animation-duration: 4s; animation-delay: 1s;">
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3 text-brand">
+                            <i class="fas fa-bolt text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-gray-500">平均核销速度</p>
+                            <p class="font-bold text-md text-gray-900">0.8 秒/人</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute top-1/2 -right-6 md:-right-12 transform -translate-y-1/2 bg-white text-gray-800 p-3 rounded-xl shadow-xl z-20 hidden md:block animate-pulse">
+                    <div class="flex items-center space-x-3">
+                        <div class="text-center">
+                           
+                            <p class="font-bold text-xl text-action">1,288</p>
+                        </div>
+                        <div class="h-8 w-px bg-gray-200"></div>
+                        <div class="text-xs text-gray-500 leading-tight">
+                            今日<br>已报餐人数
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">您的食堂管理是否面临这些难题？</h2>
+            <p class="text-gray-500 mb-12 max-w-2xl mx-auto">传统食堂管理模式下，财务对账难、食材浪费大、员工排队久，这些问题正在吞噬企业的利润。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-red-100 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">财务对账混乱</h3>
+                    <p class="text-sm text-gray-600">现金充值易出错，补贴与个人余额混淆不清，月底核算耗时耗力。</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">食材浪费严重</h3>
+                    <p class="text-sm text-gray-600">备餐数量靠猜，做多了倒掉，做少了挨骂，食材损耗无法控制。</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">排队体验极差</h3>
+                    <p class="text-sm text-gray-600">高峰期拥堵，忘带饭卡就没法吃，结算速度慢，员工抱怨不断。</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">数据统计缺失</h3>
+                    <p class="text-sm text-gray-600">无法统计各部门消费情况，缺乏多维度报表，运营决策无依据。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="财务报表管理" class="rounded-xl shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="text-brand font-bold mb-2 uppercase tracking-wide">财务核心功能</div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">独创“双钱包”体系，<br>补贴与现金分得清</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-wallet text-action text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">现金+补贴独立核算</h4>
+                                <p class="text-gray-600">支持双钱包管理。企业补贴可设置定期清零（如月底清零），员工个人充值永久有效，彻底解决税务合规与福利管理难题。</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-cogs text-action text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">灵活的消费规则</h4>
+                                <p class="text-gray-600">针对不同人员（领导/员工/访客）及不同时段（早中晚），自动匹配扣费规则与补贴优先扣除逻辑。</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-mobile-alt text-action text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">全渠道充值</h4>
+                                <p class="text-gray-600">支持微信/支付宝线上自助充值（实时到账），同时也支持线下人工/终端充值。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <div class="text-4xl text-brand mb-2"><i class="fas fa-user-check"></i></div>
+                            <p class="font-bold">人脸识别机</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <div class="text-4xl text-brand mb-2"><i class="fas fa-qrcode"></i></div>
+                            <p class="font-bold">核销盒子</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <div class="text-4xl text-brand mb-2"><i class="fas fa-wifi"></i></div>
+                            <p class="font-bold">RFID智盘</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center">
+                            <div class="text-4xl text-brand mb-2"><i class="fas fa-mobile"></i></div>
+                            <p class="font-bold">手机扫码</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="text-brand font-bold mb-2 uppercase tracking-wide">运营提效</div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">多端报餐 + 智能核销，<br>排队时间缩短 70%</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-calendar-check text-brand text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">手机提前报餐 </h4>
+                                <p class="text-gray-600">员工通过移动端预订，食堂根据预订量反向采购备餐，从源头杜绝浪费。支持设置“未报餐无权限就餐”。</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-bolt text-brand text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-lg">多模式极速核销</h4>
+                                <p class="text-gray-600">支持刷脸、刷卡、动态二维码、闸机等多种方式。特别推出<b>“核销盒子”</b>，无需连接电脑，插电即用，低成本升级首选。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#contact" class="text-brand font-bold hover:underline">
+                            查看所有硬件规格 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="data" class="py-16 bg-brand-dark text-white">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">老板要的“经营报表”，系统自动生成</h2>
+            <p class="text-blue-200 mb-10">无需人工统计，支持按日/月导出，多维度分析食堂经营状况。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
+                    <h3 class="text-xl font-bold mb-2">营业额统计</h3>
+                    <p class="text-sm text-blue-200">日/月消费人数、消费金额、充值金额一目了然。</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
+                    <h3 class="text-xl font-bold mb-2">组织补贴分析</h3>
+                    <p class="text-sm text-blue-200">各部门补贴发放多少？实际消费多少？数据透明。</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-6 rounded-lg border border-white/20">
+                    <h3 class="text-xl font-bold mb-2">餐别/菜品分析</h3>
+                    <p class="text-sm text-blue-200">早中晚餐别收入对比，各类计次、定额消费占比分析。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="w-full md:w-5/12 bg-brand p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">联系我们</h3>
+                        <p class="mb-8 text-blue-100">立即预约，我们将为您提供量身定制的智慧食堂改造方案及报价。</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt w-8"></i>
+                                <span class="text-lg font-bold">400-XXX-XXXX</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-weixin w-8"></i>
+                                <span>官方微信咨询</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope w-8"></i>
+                                <span>contact@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <p class="text-sm text-blue-300">适用场景：</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-blue-800 px-3 py-1 rounded text-xs">政府机关</span>
+                            <span class="bg-blue-800 px-3 py-1 rounded text-xs">企业园区</span>
+                            <span class="bg-blue-800 px-3 py-1 rounded text-xs">医院食堂</span>
+                            <span class="bg-blue-800 px-3 py-1 rounded text-xs">高校/中小学</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-7/12 p-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">免费领取解决方案 & 报价</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">您的称呼</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="如：王经理">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">联系电话 <span class="text-red-500">*</span></label>
+                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="用于接收方案">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">单位名称</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="请输入单位全称">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">就餐人数规模</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand">
+                                <option>100人以下</option>
+                                <option>100-500人</option>
+                                <option>500-1000人</option>
+                                <option>1000人以上</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">核心需求 (多选)</label>
+                            <div class="flex flex-wrap gap-2 text-sm text-gray-600">
+                                <label class="flex items-center space-x-1"><input type="checkbox" class="rounded text-brand"> <span>双钱包/补贴管理</span></label>
+                                <label class="flex items-center space-x-1"><input type="checkbox" class="rounded text-brand"> <span>人脸/硬件核销</span></label>
+                                <label class="flex items-center space-x-1"><input type="checkbox" class="rounded text-brand"> <span>在线订餐报餐</span></label>
+                                <label class="flex items-center space-x-1"><input type="checkbox" class="rounded text-brand"> <span>其他</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-action hover:bg-action-hover text-white font-bold py-3 rounded-lg text-lg transition shadow-md mt-4">
+                            立即获取报价
+                        </button>
+                        <p class="text-center text-xs text-gray-400 mt-2">您的信息将被严格保密，仅用于方案沟通。</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm pb-24 md:pb-8">
+        <div class="container mx-auto">
+            <p>&copy; 2025 XXXX科技有限公司 版权所有</p>
+            <p class="mt-2">专注于智慧食堂系统开发与运营</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 flex md:hidden mobile-bottom-bar z-50">
+        <a href="tel:400xxxxxx" class="flex-1 py-3 text-center text-gray-700 font-bold border-r border-gray-200 active:bg-gray-100">
+            <i class="fas fa-phone-alt mr-2 text-brand"></i> 电话咨询
+        </a>
+        <a href="#contact" class="flex-1 py-3 text-center text-white bg-action font-bold active:bg-action-hover">
+            <i class="fas fa-clipboard-list mr-2"></i> 在线报价
+        </a>
+    </div>
+
+</body>
+</html>
